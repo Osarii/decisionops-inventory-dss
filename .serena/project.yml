@@ -58,37 +58,31 @@ added_modes: null
 
 # Instructions Serena receives when this project is activated.
 initial_prompt: |
-  This project is DecisionOps Inventory DSS, a React application for
-  inventory and logistics decision support.
+  This project is DecisionOps Inventory DSS.
 
-  Before making changes, inspect the repository structure and existing
-  implementation.
+  Use the active Antigravity workspace rules as the primary source of
+  instructions.
 
-  Follow the project instructions located in:
-  - .agents/rules/project-rules.md
-  - .agents/rules/ponytail.md
-  - .agents/rules/antigravity-rtk-rules.md
-  - docs/ANTIGRAVITY_MASTER_PROMPT_INVENTORY_DSS.md
+  In particular, respect:
+  - 00-project-core.md
+  - 10-tool-policy.md
+  - CURRENT_TASK.md
+  - PROJECT_STATUS.md
+  - ponytail.md
+  - antigravity-rtk-rules.md
 
-  Academic requirements are mandatory and must not be removed for
-  simplification.
+  Use Serena primarily for semantic code navigation, symbol lookup,
+  references and targeted code inspection.
+
+  Do not read the complete Master Prompt unless the active project rules
+  indicate that it is necessary.
+
+  Prefer targeted symbol retrieval over reading large files.
 
   Reuse existing code before creating new abstractions.
 
-  Keep UI, business logic, and data-access logic separated.
+  Keep UI, business logic and data-access logic separated.
 
   Inventory risk calculations must have a single source of truth.
 
-  The React application must remain functional without n8n. n8n integration
-  should occur through the configured webhook service.
-
-  Use Serena symbolic tools for codebase navigation and reference analysis
-  when appropriate.
-
-# Symbol information retrieval budget.
-# Null means Serena will use its global configuration.
-symbol_info_budget: null
-
-# Serena memory configuration.
-read_only_memory_patterns: []
-ignored_memory_patterns: []
+  The React application must remain functional without n8n.

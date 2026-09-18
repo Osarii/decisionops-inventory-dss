@@ -2,12 +2,16 @@
 trigger: always_on
 ---
 
-## Context Loading
+---
+trigger: always_on
+---
 
-For normal development tasks, read first:
+# Context Loading
 
-1. docs/CURRENT_TASK.md
-2. docs/PROJECT_STATUS.md
+`CURRENT_TASK.md` and `PROJECT_STATUS.md` are always-on workspace rules and
+represent the current task and project state.
+
+Do not reload the complete Master Prompt for normal development work.
 
 Consult:
 
@@ -18,6 +22,6 @@ only when:
 - starting a new phase;
 - verifying an academic requirement;
 - resolving ambiguity;
-- implementing a requirement not summarized in PROJECT_STATUS.
+- implementing a requirement not summarized by the active rules.
 
-Do not reread the entire Master Prompt for every small code change.
+Use the smallest amount of context necessary for the current task.
