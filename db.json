@@ -1,0 +1,9 @@
+{
+  "inventory": [
+    { "id": 1, "name": "Item A", "stock": 100 },
+    { "id": 2, "name": "Item B", "stock": 10 }
+  ],
+  "users": [
+    { "id": 1, "name": "Admin", "role": "admin" }
+  ]
+}

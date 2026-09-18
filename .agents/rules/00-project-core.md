@@ -66,12 +66,11 @@ Antigravity prepara:
 - fallback local.
 
 No inventar webhook.
-
 ## Calidad
 
-Antes de cerrar una fase:
+Antigravity implementa la fase solicitada y se detiene.
 
-- tests pasan;
-- build pasa;
-- consola sin errores;
-- cambios revisados.
+Las validaciones, tests, build, QA y revisión de consola serán realizadas
+posteriormente por el usuario y ChatGPT.
+
+No ejecutar validaciones automáticamente.

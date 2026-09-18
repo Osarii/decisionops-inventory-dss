@@ -102,12 +102,24 @@ No hacer refactors masivos mientras se implementa una funcionalidad diferente.
 No modificar archivos fuera del alcance de CURRENT_TASK.md salvo que sea
 estrictamente necesario.
 
-## Verificación
+Antigravity must NOT perform project validation unless explicitly requested.
 
-Después de cambios relevantes:
+Do not automatically run:
 
-rtk npm test
-rtk npm run build
-rtk git diff
+- builds;
+- tests;
+- coverage;
+- lint;
+- server validation;
+- browser QA;
+- responsive checks;
+- accessibility checks;
+- console validation.
+
+Implementation and validation are separate phases.
+
+The user and ChatGPT will perform validation manually after implementation.
+
+Antigravity should implement the requested task, update project status and stop.
 
 Corregir errores antes de continuar.

@@ -18,17 +18,17 @@ PHASE 1 — React foundation
 - Ponytail installed.
 - RTK rules installed.
 - Serena project configured.
-
-## Current architecture
-
-Application has not been generated yet.
-
-## Pending
-
 - React/Vite initialization.
 - Dependencies.
 - JSON Server.
 - db.json.
+
+## Current architecture
+
+React + Vite SPA with React Router DOM and JSON Server. Base folders initialized (components, pages, services, etc).
+
+## Pending
+
 - Auth.
 - Roles.
 - Risk engine.
@@ -54,4 +54,4 @@ None.
 
 ## Next phase
 
-Initialize React/Vite and create the minimum project architecture.
+Implement Risk engine logic or Authentication/Roles depending on priority.

@@ -34,10 +34,9 @@ required for the project.
 
 ## Validation
 
-- npm install succeeds.
-- npm run dev succeeds.
-- npm run server succeeds.
-- npm run build succeeds.
+Do not perform validation during this task.
+
+Validation will be performed separately by the user and ChatGPT.
 
 ## Constraints
 
